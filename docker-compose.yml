@@ -1,0 +1,13 @@
+version '3.6'
+
+services:
+
+  app-webapp:
+    container_name: 'app-webapp'
+    build:
+      context: .
+      dockerfile: ./docker/app
+    environment:
+      - NODE_ENV='development'
+    volumes:
+      - ./src:/src/webapp

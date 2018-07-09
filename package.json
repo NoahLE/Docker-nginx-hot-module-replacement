@@ -1,0 +1,29 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "A webpack and Vue app which serves a single page with hot-module-replacement",
+  "main": "index.js",
+  "author": "NoahLE",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "cross-env NODE_ENV=development webpack --config webpack.conf.js --progress --hide-modules",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --config webpack.conf.js --progress --hide-modules"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "vue": "^2.5.16",
+    "vue-loader": "^15.2.4",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0"
+  }
+}
