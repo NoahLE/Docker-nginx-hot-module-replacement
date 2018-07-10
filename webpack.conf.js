@@ -10,7 +10,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'js/webapp.js'
+        filename: 'js/webapp.js',
     },
     resolve: {
         extensions: ['.js', '.vue'],
