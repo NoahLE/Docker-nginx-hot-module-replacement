@@ -6,8 +6,7 @@ This is an almost working project. The last step to getting this working is gett
 
 1. Install yarn, node, and Docker
 2. `cd` into the project root and run `docker-compose -f docker-compose.yml up --build`
-3. Open your browser and go to `http://localhost`
-4. Open the console and look at the web traffic
+3. Open your browser and go to `http://localhost`. Then, open the console and look at the web traffic
 
 ## Clues
 
