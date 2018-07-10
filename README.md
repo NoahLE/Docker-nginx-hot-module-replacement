@@ -14,3 +14,10 @@ This is an almost working project. The last step to getting this working is gett
 * The `app-webapp` container is correctly serving the HMR requests, `nginx` is where the requests are failing
 * Open the console in your browser and see that the `XHR` requests are failing
 * You can build a working copy of nginx using the [jwilder/nginx-proxy](https://github.com/jwilder/nginx-proxy) image. I made working copy in [this repo](https://github.com/NoahLE/Docker-nginx-webpack-HMR).
+
+## Helpful links
+
+* [webpack config - devServer](https://webpack.js.org/configuration/dev-server/)
+* [webpack - hot module replacement](https://webpack.js.org/guides/hot-module-replacement/)
+* [nginx - proxy_pass](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass)
+* [jwilder/reverse-proxy](https://github.com/jwilder/nginx-proxy)
