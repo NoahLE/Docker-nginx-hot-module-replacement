@@ -1,6 +1,7 @@
 version: '3.6'
 services:
 
+  # The Vue web application which has hot-module-replacement
   app-webapp:
     container_name: 'app-webapp'
     image: 'app-webapp'
@@ -15,6 +16,7 @@ services:
       - NODE_ENV='development
     command: yarn hot
 
+  # The reverse-proxy nginx server
   app-nginx:
     container_name: 'app-nginx'
     image: 'app-nginx'
