@@ -27,7 +27,7 @@ module.exports = {
         inline: true,
         open: false,
         historyApiFallback: true,
-        public: 'localhost:3000',
+        public: 'app-webapp:3000',
         host: '0.0.0.0',
         port: 3000
     },

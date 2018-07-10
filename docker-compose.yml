@@ -7,8 +7,24 @@ services:
     build:
       context: .
       dockerfile: ./docker/app/Dockerfile
-    environment:
-      - NODE_ENV='development
     ports:
       - '3000:3000'
+    networks:
+      - app-network
+    environment:
+      - NODE_ENV='development
     command: yarn hot
+
+  app-nginx:
+    container_name: 'app-nginx'
+    image: 'app-nginx'
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    ports:
+      - '80:80'
+    networks:
+      - app-network
+
+networks:
+  app-network:
