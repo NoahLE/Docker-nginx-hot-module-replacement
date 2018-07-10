@@ -1,7 +1,12 @@
-FROM node:9.11.2-jessie
+FROM node:10.6.0-alpine
 
 WORKDIR /src/webapp
 
-EXPOSE 3000
+COPY . ./
 
-CMD ['yarn', 'hot']
+RUN yarn
+RUN yarn build
+
+#EXPOSE 3000
+
+CMD yarn build

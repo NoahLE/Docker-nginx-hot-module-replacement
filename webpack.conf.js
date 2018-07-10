@@ -9,8 +9,8 @@ module.exports = {
         webapp: path.join(__dirname, 'src/app.js')
     },
     output: {
-        filename: 'js/webapp.js',
-        path: path.join(__dirname, 'dist')
+        path: path.join(__dirname, 'dist'),
+        filename: 'js/webapp.js'
     },
     resolve: {
         extensions: ['.js', '.vue'],
@@ -26,12 +26,14 @@ module.exports = {
         hot: true,
         inline: true,
         open: false,
+        historyApiFallback: true,
+        public: 'localhost:3000',
+        host: '0.0.0.0',
         port: 3000
-        // historyApiFallback: true,
-        // host:
-        // public:
-        // public:
-        //
+    },
+    watchOptions: {
+        aggregateTimeout: 300,
+        poll: 1000
     },
     module: {
         rules: [
