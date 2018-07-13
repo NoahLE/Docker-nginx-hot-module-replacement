@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -27,7 +28,7 @@ module.exports = {
         inline: true,
         open: false,
         historyApiFallback: true,
-        public: 'app-webapp:3000',
+        public: 'localhost:3000',
         host: '0.0.0.0',
         port: 3000
     },
@@ -63,6 +64,9 @@ module.exports = {
                 img: 'src',
                 images: 'xlink:href'
             }
+        }),
+        new HtmlWebpackPlugin({
+          template: 'html/index.html'
         })
     ]
 };
