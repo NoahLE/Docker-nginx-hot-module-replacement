@@ -12,6 +12,8 @@ services:
       - '3000:3000'
     networks:
       - app-network
+    volumes:
+      - .:/src/webapp:delegated
     environment:
       - NODE_ENV='development
     command: yarn hot
