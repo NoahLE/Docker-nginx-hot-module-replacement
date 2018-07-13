@@ -15,7 +15,7 @@ services:
     volumes:
       - .:/src/webapp:delegated
     environment:
-      - NODE_ENV='development
+      - NODE_ENV='development'
     command: yarn hot
 
   # The reverse-proxy nginx server
